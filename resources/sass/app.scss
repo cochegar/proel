@@ -1,1 +1,19 @@
-body{background:blue;}
+body{background: #fff;
+
+    padding-top:54px; 
+}
+.header{
+    background:yellow;
+    
+
+
+}
+.footer{
+    background:yellow;
+}
+.slider{
+    img{max-width: 100%;}
+}
+.empty{min-height: 1000px;
+    border:1px solid yellow;
+}
