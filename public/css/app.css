@@ -1,21 +1,85 @@
 body {
+  @import url("https://fonts.cdnfonts.com/css/exo-2");
   background: #fff;
+  font-family: Roboto;
   padding-top: 54px;
 }
 
 .header {
-  background: yellow;
+  background-color: #e9ecef;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .footer {
-  background: yellow;
+  background: #282466;
+  padding: 35px 0 80px;
+  color: #fff;
+  /*.container-xxl{border:1px solid #fff;}*/
+}
+.footer ul li {
+  list-style: none;
+}
+.footer a {
+  font-size: 14px;
+  color: #fff;
+}
+.footer .logo {
+  width: 190px;
+  height: 52px;
+  background: url(/images/logo-footer.svg) no-repeat center center;
+  background-size: contain;
 }
 
 .slider img {
   max-width: 100%;
 }
 
-.empty {
-  min-height: 1000px;
-  border: 1px solid yellow;
+.main-item {
+  /*display:flex;*/
+}
+.main-item .item-inner {
+  font-weight: 300;
+  padding: 25px 94px 0;
+  line-height: 25.2px;
+  justify-content: space-around;
+}
+.main-item .item-inner img {
+  max-width: 100%;
+  margin-top: 10px;
+  /*height: 190px;*/
+}
+.main-item .item-inner p {
+  margin-bottom: 0;
+}
+.main-item h3 {
+  display: flex;
+  color: #282466;
+  justify-content: center;
+  width: 100%;
+  padding-top: 55px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+}
+.main-item h4 {
+  color: #282466;
+  font-size: 18px;
+}
+.main-item .wrp-a {
+  display: flex;
+  justify-content: center;
+}
+.main-item .wrp-a a {
+  font-family: "Roboto", sans-serif;
+  color: #404040;
+  font-size: 20px;
+  padding: 30px 37px 0;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+}
+.main-item .wrp-a a.w-pad {
+  padding: 30px 63px 0;
+  line-height: 25px;
 }
