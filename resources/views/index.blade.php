@@ -61,7 +61,7 @@
     </div>
 </div>
 <div class="row">
-<div class="col-12 ">
+    <div class="col-12 ">
         <div class="main-item justify-content-center">
             <div class="row"><h3>Монтаж и пусконаладка</h3></div>
             <div class="row item-inner">
@@ -77,9 +77,33 @@
     </div>
 </div>
 <div class="row">
-        <div class="col-12 ">
-            <div class="main-item justify-content-center"><h3>Заказать</h3></div>
+    <div class="col-12 ">
+        <div class="main-item justify-content-center">
+            <div class="row"><h3>Заказать</h3></div>
+            <div class="row item-inner">
+                <div class="col-3 bg-pict">
+                    <div class="wrp-a">
+                        <a href="">КАТАЛОГ ПРОДУКЦИИ <br>2020</a>
+                    </div>
+                </div>
+                <div class="col-3 bg-pict">
+                    <div class="wrp-a">
+                        <a href="">ОПРОСНЫЙ ЛИСТ <br>ОВОД-МД</a>
+                    </div>
+                </div>
+                <div class="col-3 bg-pict">
+                    <div class="wrp-a">
+                        <a href="">ОПРОСНЫЙ ЛИСТ <br>ОВОД-Л</a>
+                    </div>
+                </div>
+                <div class="col-3 bg-pict">
+                    <div class="wrp-a">
+                        <a href="">ОПРОСНЫЙ ЛИСТ <br>ПРОЭЛ-МИНИ</a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
     <div class="row">
         <div class="col-12 ">

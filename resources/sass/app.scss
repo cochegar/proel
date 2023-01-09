@@ -1,17 +1,60 @@
+
 body{
     
     @import url('https://fonts.cdnfonts.com/css/exo-2');
     
     background: #fff;
     font-family: Roboto;
-    padding-top:54px; 
+    padding-top:168px; 
 }
 .header{
-    background-color:#e9ecef;
+    background-color:#fff;
     box-shadow: 0px 4px 4px 0px #00000040;
+    min-height:133px;
+    .container{align-items: center;}
+    .mt-60{margin-top:50px;}
+    .logo{
+        width: 150px;
+        height: 33px;
+        background: url(/images/logo.svg) no-repeat center center;
+        background-size: contain;
+        display: flex;
+        padding-top: 45px;
+        margin-top:0;
+    }
+    a{
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: center;
+        color:rgba(56, 56, 56, 0.8);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
 
-    
 
+    }
+    .wrp-a{margin-bottom:5px;}
+    .wrp-input-search{display:flex;justify-content: center;}
+    .social {
+        a{
+            display:flex;
+            background: url(/images/pictogram/vk1.svg) no-repeat center center;
+            background-size: contain;
+            width: 20px;
+            height: 20px;
+       }
+        a.pub{
+            background: url(/images/pictogram/public.svg) no-repeat center center;
+        }
+        a.teleg{
+            background: url(/images/pictogram/telegram.svg) no-repeat center center;
+        }
+    }
+    input{height:22px;}
 
 }
 .footer{
@@ -84,6 +127,26 @@ body{
             padding:30px 63px 0;
             line-height: 25px;
         }
-    }    
+    }
+    .col-3{
+        .wrp-a{
+
+            display: flex;
+            justify-content: center;
+            a{
+                font-family: 'Roboto', sans-serif;
+                color:#404040;
+                font-size:20px;
+                padding:30px 3px 0;
+                text-decoration: none;
+                text-align: center;
+                font-weight: 400;
+                background:url('/images/pictogram/tech.svg') no-repeat center top;
+                background-size: 80px;
+                display:block;
+                padding-top: 92px;
+            }
+        } 
+    }   
     
 }
