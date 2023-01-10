@@ -69,7 +69,7 @@
                 Наша компания выполняет строительно-монтажные, шеф-монтажные и пусконаладочные работы устройств дуговой защиты на объектах Заказчика. 
                 </div>
                 <div class="col-6">
-                Работа проводят опытные специалисты имеющие IV и V группы по электробезопасности, прошедшие обучение по охране труда, работам на высоте и пр.
+                Работы проводят опытные специалисты имеющие IV и V группы по электробезопасности, прошедшие обучение по охране труда, работам на высоте и пр.
 
                 </div>
             </div>
@@ -102,12 +102,71 @@
                     </div>
                 </div>
             </div>
+            <div class="row ">
+                <div class="wrp-send-us">
+                    <div class=" send-us">Напишите нам</div>
+                </div>
+            </div>
         </div>
     </div>
     </div>
     <div class="row">
         <div class="col-12 ">
-            <div class="main-item justify-content-center"><h3>Поддержка</h3></div>
+        <div class="main-item justify-content-center">
+            <div class="row"><h3>Поддержка</h3></div>
+            <div class="row ">
+                <div class="main-inner-text">
+                    Наше предприятие осуществляет гарантийное и послегарантийное обслуживание устройств дуговой защиты:
+                </div>
+            </div>
+            <div class="row ">
+                <div class="wrp-a">
+                    <a class="prod" href="">ОВОД</a>
+                    <a class="prod" href="">ОВОД-М</a>
+                    <a class="prod" href="">ОВОД-МД</a>
+                    <a class="prod" href="">ОВОД-Л</a>
+                    <a class="prod" href="">ПРОЭЛ-МИНИ</a>
+                    
+                </div>
+            </div>
+                        
+            <div class="row item-inner">
+                <div class="col-3 bg-pict">
+                    <div class="wrp-a">
+                        <a class="tech" href="">ТЕХНИЧЕСКАЯ <br>ДОКУМЕНТАЦИЯ </a>
+                    </div>
+                </div>
+                <div class="col-3 bg-pict">
+                    <div class="wrp-a">
+                        <a class="prog"  href="">ПРОГРАМНОЕ  <br>ОБЕСПЕЧЕНИЕ</a>
+                    </div>
+                </div>
+                <div class="col-3 bg-pict">
+                    <div class="wrp-a">
+                        <a class="serv"  ref="">СЕРВИС</a>
+                    </div>
+                </div>
+                <div class="col-3 bg-pict">
+                    <div class="wrp-a">
+                        <a class="warant"  href="">ГАРАНТИЙНОЕ И <br>ПОСЛЕГАРАНТИЙНОЕ<br>ОБСЛУЖИВАНИЕ </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wrp-main-inner-text">
+                    <div class="main-inner-text consult col-8">
+                    Получить подробную информацию, консультацию можно получить у специалиста нашего предприятия <br>по телефону (812) 3631-50-33 (34) доб. 401.        
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row ">
+                <div class="wrp-send-us">
+                    <div class=" send-us">Напишите нам</div>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
     <div class="row">

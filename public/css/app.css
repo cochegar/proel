@@ -103,6 +103,16 @@ body {
 .main-item .item-inner p {
   margin-bottom: 0;
 }
+.main-item .main-inner-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.main-item .wrp-main-inner-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 .main-item h3 {
   display: flex;
   color: #282466;
@@ -131,6 +141,16 @@ body {
   text-align: center;
   font-weight: 400;
 }
+.main-item .wrp-a a.prod {
+  padding: 10px 37px 35px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #282466;
+}
 .main-item .wrp-a a.w-pad {
   padding: 30px 63px 0;
   line-height: 25px;
@@ -147,8 +167,42 @@ body {
   text-decoration: none;
   text-align: center;
   font-weight: 400;
-  background: url("/images/pictogram/tech.svg") no-repeat center top;
+  background: url("/images/pictogram/ord.svg") no-repeat center top;
   background-size: 80px;
   display: block;
   padding-top: 92px;
+}
+.main-item .col-3 .wrp-a a.prog {
+  background: url("/images/pictogram/prog.svg") no-repeat center top;
+  background-size: 80px;
+}
+.main-item .col-3 .wrp-a a.serv {
+  background: url("/images/pictogram/serv.svg") no-repeat center top;
+  background-size: 80px;
+}
+.main-item .col-3 .wrp-a a.warant {
+  background: url("/images/pictogram/warant.svg") no-repeat center top;
+  background-size: 80px;
+}
+.main-item .col-3 .wrp-a a.tech {
+  background: url("/images/pictogram/tech.svg") no-repeat center top;
+  background-size: 80px;
+}
+.main-item .wrp-send-us {
+  display: flex;
+  justify-content: space-around;
+}
+.main-item .wrp-send-us .send-us {
+  background: #E79500;
+  border-radius: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-feature-settings: "kern" off;
+  color: #FFFFFF;
+  margin-top: 60px;
+  padding: 10px 25px;
 }
