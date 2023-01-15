@@ -169,10 +169,80 @@
         </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 ">
-            <div class="main-item justify-content-center"><h3>Контакты</h3></div>
+    <div class="col-12 ">
+        <div class="main-item justify-content-center">
+            <div class="row"><h3>Контакты</h3></div>
+            <div class="row item-inner">
+                <div class="col-8 row">
+                    <div class="col-3">
+                        <div class="big-pict contact"></div>
+
+                    </div>
+                    
+                    <div class="col-9">
+                        <div class="chapter py-0 my-0">ООО НПП "ПРОЭЛ"</div>    
+                        <ul class="icons">
+                            <li class="adres">190005, Санкт-Петербург, наб. Обводного канала, д. 118А, лит. Л.</li>
+                            <li class="phone">+7(812) 331-50-33, 331-50-34</li>
+                            <li>info@proel.spb.ru</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="col-4">
+                    <div class="mb-25"></div>
+                   <ul class="icons">
+                        <li class="adres1">+7(812) 331-50-33 + добавочный 401</li>
+                        <li>support@proel.spb.ru</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="row mb-30"></div>       
+            <div class="row item-inner">
+                <div class="col-4">
+                    <div class="big-pict commerc"></div>
+                    <div class="chapter">Коммерческий отдел</div>
+                    <div class="main-inner-text col-10">Вопросы и консультации по проектированию, применению и сроках изготовления</div>
+                    <ul class="icons">
+                        <li class="phone">+7(812) 331-50-33 + добавочный 400</li>
+                        <li>info@proel.spb.ru</li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="col-4">
+                    <div class="big-pict logist"></div>
+                    <div class="chapter">Отдел логистики</div>
+                    <div class="main-inner-text col-10">Планирование и управление доставкой готовой продукции</div>
+                    <ul class="icons">
+                        <li class="phone">+7(812) 331-50-33 + добавочный 414<br>+7(812) 331-50-35</li>
+                        <li>info@proel.spb.ru</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <div class="big-pict support"></div>
+                    <div class="chapter">Техподдержка</div>
+                    <div class="main-inner-text">Техническое сопровождение заказов и работа с рекламациями</div>
+                    <ul class="icons">
+                        <li class="phone">+7(812) 331-50-33 + добавочный 401</li>
+                        <li>support@proel.spb.ru</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="mb-70">
+                    
+                </div>
+            </div>
+            
+
+            
         </div>
+        
     </div>
 @endsection
 

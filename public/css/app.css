@@ -86,8 +86,45 @@ body {
   max-width: 100%;
 }
 
-.main-item {
-  /*display:flex;*/
+.main-item .mb-70 {
+  margin-bottom: 70px;
+}
+.main-item .mb-30 {
+  margin-bottom: 30px;
+}
+.main-item .mb-25 {
+  margin-bottom: 25px;
+}
+.main-item ul.icons {
+  padding-left: 0;
+}
+.main-item ul.icons li {
+  list-style: none;
+  padding-left: 20px;
+  display: flex;
+}
+.main-item ul.icons li::before {
+  content: "";
+  width: 23px;
+  height: 25px;
+  background: url(/images/pictogram/e-mail.svg) no-repeat center center;
+  background-size: 20px;
+  display: inline-flex;
+  margin-left: -48px;
+  margin-top: 0px;
+  margin-right: 8px;
+}
+.main-item ul.icons li.adres::before {
+  background: url(/images/pictogram/adres.svg) no-repeat center center;
+  background-size: 20px;
+}
+.main-item ul.icons li.phone::before {
+  background: url(/images/pictogram/phone.svg) no-repeat center center;
+  background-size: 20px;
+}
+.main-item ul.icons li.adres1::before {
+  background: url(/images/pictogram/adres1.svg) no-repeat center center;
+  background-size: 20px;
 }
 .main-item .item-inner {
   font-weight: 300;
@@ -102,6 +139,41 @@ body {
 }
 .main-item .item-inner p {
   margin-bottom: 0;
+}
+.main-item .item-inner .big-pict {
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+}
+.main-item .item-inner .commerc {
+  background: url(/images/pictogram/commerc.svg) no-repeat center center;
+  background-size: contain;
+  background-position: 5px 0px;
+  width: 90px;
+}
+.main-item .item-inner .logist {
+  background: url(/images/pictogram/logist.svg) no-repeat center center;
+  background-size: contain;
+}
+.main-item .item-inner .support {
+  background: url(/images/pictogram/support.svg) no-repeat center center;
+  background-size: contain;
+}
+.main-item .item-inner .contact {
+  background: url(/images/pictogram/contact.svg) no-repeat center center;
+  background-size: contain;
+}
+.main-item .item-inner .chapter {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 13px;
+  color: #28295B;
+}
+.main-item .item-inner .main-inner-text {
+  margin-top: 15px;
 }
 .main-item .main-inner-text {
   display: flex;

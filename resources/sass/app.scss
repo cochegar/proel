@@ -82,8 +82,41 @@ body{
 }
 
 .main-item{
-    
-    /*display:flex;*/
+    .mb-70{margin-bottom:70px;}
+    .mb-30{margin-bottom:30px;}
+    .mb-25{margin-bottom:25px;}
+    ul.icons{
+        padding-left:0;
+        li{list-style: none;
+            padding-left: 20px;
+            
+            display: flex;}
+        li::before{
+            content: "";
+            width: 23px;
+            height: 25px;
+        
+            background: url(/images/pictogram/e-mail.svg) no-repeat center center;
+            background-size: 20px;
+            display: inline-flex;
+            margin-left: -48px;
+            margin-top: 0px;
+            margin-right: 8px;
+        }
+        li.adres::before{
+            background: url(/images/pictogram/adres.svg) no-repeat center center;
+            background-size: 20px;
+        }
+        li.phone::before{
+            background: url(/images/pictogram/phone.svg) no-repeat center center;
+            background-size: 20px;
+        }
+        li.adres1::before{
+            background: url(/images/pictogram/adres1.svg) no-repeat center center;
+            background-size: 20px;
+        }
+
+    }
     .item-inner{
         font-weight: 300;
         padding:25px 94px 0;
@@ -95,6 +128,35 @@ body{
             /*height: 190px;*/
         }
         p{margin-bottom:0;}
+        .big-pict{
+            
+            background-size: contain;
+            width:80px;
+            height:80px;
+            
+        }
+        .commerc{background: url(/images/pictogram/commerc.svg) no-repeat center center;
+            background-size: contain;
+            background-position: 5px 0px;
+            width:90px;
+        }
+        .logist{background: url(/images/pictogram/logist.svg) no-repeat center center;
+                background-size: contain;}
+        .support{background: url(/images/pictogram/support.svg) no-repeat center center;
+                    background-size: contain;}
+        .contact{background: url(/images/pictogram/contact.svg) no-repeat center center;
+                        background-size: contain;}
+        .chapter{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 23px;
+
+            margin-top:13px;
+            color: #28295B;
+        }
+        .main-inner-text{margin-top:15px;}
         
 
     }
