@@ -1,11 +1,11 @@
 require('./bootstrap')
 
 import { createApp } from 'vue'
-import HelloWorld from './components/Welcome'
+import Slider from './components/Slider'
 
 const app = createApp({})
 
-app.component('hello-world', HelloWorld)
+app.component('slider', Slider)
 
-app.mount('#app')
+app.mount('#slider')
 
