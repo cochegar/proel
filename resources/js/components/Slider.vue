@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-    setup: () => ({
+    data: () => ({
         title: 'Install Vue 3 in Laravel 8 From Scratch'
     })
 }

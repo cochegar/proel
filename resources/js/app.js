@@ -1,11 +1,10 @@
 require('./bootstrap')
-
 import { createApp } from 'vue'
-import Slider from './components/Slider'
-
+import slider from './components/slider'
 const app = createApp({})
+app.component('slider', slider)
+app.mount('.slider')
 
-app.component('slider', Slider)
 
-app.mount('#slider')
+
 
