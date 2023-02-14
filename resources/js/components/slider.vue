@@ -3,6 +3,7 @@
       
       <v-carusel
         :carusel_data="SliderItems"
+        :interval="5000"
       />
       
   </div>

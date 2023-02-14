@@ -19565,10 +19565,38 @@ __webpack_require__.r(__webpack_exports__);
       "default": function _default() {
         return [];
       }
+    },
+    interval: {
+      type: Number,
+      "default": 0
+    }
+  },
+  methods: {
+    PrevSlide: function PrevSlide() {
+      if (this.currentSlideIndex > 0) {
+        this.currentSlideIndex--;
+      }
+    },
+    NextSlide: function NextSlide() {
+      if (this.currentSlideIndex >= this.carusel_data.length - 1) {
+        this.currentSlideIndex = 0;
+      } else {
+        this.currentSlideIndex++;
+      }
+    }
+  },
+  mounted: function mounted() {
+    if (this.interval > 0) {
+      var vm = this;
+      setInterval(function () {
+        vm.NextSlide();
+      }, vm.interval);
     }
   },
   data: function data() {
-    return {};
+    return {
+      currentSlideIndex: 0
+    };
   },
   computed: {}
 });
@@ -19594,7 +19622,8 @@ var _hoisted_1 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_v_carusel = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("v-carusel");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_v_carusel, {
-    carusel_data: $data.SliderItems
+    carusel_data: $data.SliderItems,
+    interval: 5000
   }, null, 8 /* PROPS */, ["carusel_data"])]);
 }
 
@@ -19644,24 +19673,27 @@ var _withScopeId = function _withScopeId(n) {
 var _hoisted_1 = {
   "class": "wrapper"
 };
-var _hoisted_2 = {
-  "class": "v-carusel"
-};
-var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", null, "Prev", -1 /* HOISTED */);
-});
-var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", null, "Next", -1 /* HOISTED */);
-});
-
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_v_carusel_item = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("v-carusel-item");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.carusel_data, function (item) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "v-carusel",
+    style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)({
+      'margin-left': '-' + 1600 * $data.currentSlideIndex + 'px'
+    })
+  }, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.carusel_data, function (item) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_v_carusel_item, {
       key: item.id,
       item_data: item
     }, null, 8 /* PROPS */, ["item_data"]);
-  }), 128 /* KEYED_FRAGMENT */))]), _hoisted_3, _hoisted_4]);
+  }), 128 /* KEYED_FRAGMENT */))], 4 /* STYLE */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[0] || (_cache[0] = function () {
+      return $options.PrevSlide && $options.PrevSlide.apply($options, arguments);
+    })
+  }, "Prev"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    onClick: _cache[1] || (_cache[1] = function () {
+      return $options.NextSlide && $options.NextSlide.apply($options, arguments);
+    })
+  }, "Next")]);
 }
 
 /***/ }),
@@ -19738,7 +19770,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".wrapper[data-v-63427887] {\n  overflow: hidden;\n}\n.wrapper .v-carusel[data-v-63427887] {\n  display: flex;\n}\n.wrapper .v-carusel img[data-v-63427887] {\n  min-width: 100%;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".wrapper[data-v-63427887] {\n  overflow: hidden;\n}\n.wrapper .v-carusel[data-v-63427887] {\n  display: flex;\n  transition: all ease 1.5s;\n}\n.wrapper .v-carusel img[data-v-63427887] {\n  min-width: 100%;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

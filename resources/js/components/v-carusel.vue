@@ -1,14 +1,14 @@
 <template>
     <div class="wrapper">
-      <div class="v-carusel">
+      <div class="v-carusel" :style="{'margin-left':'-'+(1600*currentSlideIndex)+'px'}">
       <v-carusel-item
         v-for="item in carusel_data"
         :key="item.id"
         :item_data="item"
       />
       </div>
-      <button>Prev</button>
-      <button>Next</button>
+      <button @click="PrevSlide">Prev</button>
+      <button @click="NextSlide">Next</button>
     </div>
 </template>
 
@@ -24,10 +24,41 @@ export default {
     carusel_data:{
         type:Array,
         default:()=>[]
+    },
+    interval:{
+      type:Number,
+      default:0
+    },
+  },
+  methods:{
+    PrevSlide(){
+      if(this.currentSlideIndex>0){
+
+        this.currentSlideIndex--
+      }
+    },
+    NextSlide(){
+      if(this.currentSlideIndex>=this.carusel_data.length-1){
+        this.currentSlideIndex=0  
+      }
+      else{
+        this.currentSlideIndex++
+      }
+    }
+
+  },
+  mounted(){
+    if(this.interval>0){
+      let vm=this;
+      setInterval(function(){
+        vm.NextSlide();
+      },vm.interval)
     }
   },
   data(){
-    return{}
+    return{
+      currentSlideIndex:0,
+    }
   }, 
   computed:{} 
 }
@@ -37,6 +68,7 @@ export default {
     overflow:hidden;
     .v-carusel{
     display:flex;
+    transition: all ease 1.5s;
     img
       {
         min-width:100%;
