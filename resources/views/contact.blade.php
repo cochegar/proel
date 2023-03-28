@@ -21,11 +21,19 @@
         </style>
     </head>
     <body class="antialiased">
-        <div id="slider">
-            <div class="relative flex items-top justify-center min-h-screen bg-gray-100 sm:items-center py-4 sm:pt-0">
-                <slider/>
+    <div class="row">
+    <div class="col-12">
+        <div class="main-item justify-content-center">
+            <div class="row"><h3>Продукция</h3></div>
+            <div class="wrp-a">
+                <a href="">ОВОД-МД</a>
+                <a href="">ОВОД-Л</a>
+                <a href="">ОВОД-МИНИ</a>
+                <a href="">ШДЗ</a>
             </div>
-        </div>
+        </div>    
+    </div>
+</div>
 
         <script src="{{ mix('js/app.js') }}"></script>
     </body>
