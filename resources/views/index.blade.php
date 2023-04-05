@@ -2,6 +2,7 @@
 @section('title-block','proel.ru')
 @section('content')
 @include('inc.slider')
+@include('inc.messages')
 @show
 <div class="row">
     <div class="col-12">

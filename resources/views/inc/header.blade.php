@@ -28,8 +28,8 @@
                     <div class="col-8">
                         <div class="row wrp-a">
                             <div class="col-4"><a href="">Заказать</a></div>
-                            <div class="col-4"><a href="">Поддержка</a></div>
-                            <div class="col-4"><a href="">Контакты</a></div>
+                            <div class="col-4"><a href="{{route('supports')}}">Поддержка</a></div>
+                            <div class="col-4"><a href="contacts">Контакты</a></div>
                         </div>
                         <div class="row">
                             <div class="col-12 px-0 wrp-input-search">

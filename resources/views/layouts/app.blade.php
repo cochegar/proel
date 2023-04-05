@@ -14,7 +14,10 @@
     </head>
     <body>
         @include('inc.header')
-        <div class="container">@yield('content')</div>
+        <div class="container">
+            @yield('content')
+
+        </div>
         @include('inc.footer')
     <script src="{{ mix('js/app.js') }}"></script>    
     </body>
